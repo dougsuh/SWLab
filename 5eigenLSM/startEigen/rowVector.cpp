@@ -1,4 +1,4 @@
-﻿// 1조 이주석 질문
+// 1조 이주석 질문 2022. 2학기
 #include <iostream>
 #include <Eigen/Dense> // Eigen library
 using namespace Eigen; // Eigen namespace를 사용한다.
