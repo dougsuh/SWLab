@@ -1,0 +1,8 @@
+﻿  test.cpp
+C:\Users\suh\class\cSWLab\sources\eigenDM\eigenDM\test.cpp(37,9): warning C4101: 'x': unreferenced local variable
+  Generating code
+  2 of 279 functions ( 0.7%) were compiled, the rest were copied from previous compilation.
+    1 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  eigenDM.vcxproj -> C:\Users\suh\class\cSWLab\sources\eigenDM\x64\Release\eigenDM.exe
