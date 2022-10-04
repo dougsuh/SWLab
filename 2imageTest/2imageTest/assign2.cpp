@@ -18,5 +18,5 @@ int main() {
 	}
 	// write a bmp file
 	WriteBmp("RedGrad.bmp", outbmp, x, y);
-	return 123;
+	return 1;
 }
