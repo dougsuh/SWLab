@@ -1,0 +1,4 @@
+﻿  auto.cpp
+C:\Users\suh\source\repos\test\test\auto.cpp(8,43): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\suh\source\repos\test\test\auto.cpp(16,45): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  test.vcxproj -> C:\Users\suh\source\repos\test\x64\Debug\test.exe
