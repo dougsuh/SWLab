@@ -39,6 +39,7 @@ public class GF256 {
     public int multiply(int a, int b) {
         if (a == 0 || b == 0) return 0;
         int logSum = logTable[a] + logTable[b];
+        if(logSum>255) logSum -= 255; // suh 2026.1.20
         return expTable[logSum];
     }
 
@@ -59,3 +60,4 @@ public class GF256 {
         return String.format("0x%02X", value);
     }
 }
+
