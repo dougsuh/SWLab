@@ -59,9 +59,25 @@ public class GF8 {
     return expTable[logDiff];
   }
 
+  // ax + by = c         dx + ey = f          suh 2026. 1. 20
+  int [] Eq2(int a, int b, int c, int d, int e, int f) {
+    int det = add(multiply(a, e), multiply(b, d));
+    int x,y;
+    if (det == 0) {
+      throw new ArithmeticException("Division by zero in GF(8)");
+    } else {
+      x = add(multiply(b, f), multiply(c, e));
+      x = divide(x, det);
+      y = add(multiply(a, f), multiply(c, d));
+      y = divide(y, det);
+    }
+    int [] xy = new int[2]; xy[0] = x; xy[1] = y; 
+    return xy;
+  }
   // Optional: for displaying as hex
   public String toHex(int value) {
     return String.format("0x%02X", value);
   }
 }
+
 
