@@ -54,7 +54,8 @@ public class GF8 {
   public int divide(int a, int b) {
     if (b == 0) throw new ArithmeticException("Division by zero in GF(256)");
     if (a == 0) return 0;
-    int logDiff = logTable[a] - logTable[b] + 7; // suh
+    int logDiff = logTable[a] - logTable[b];
+    if(logDiff<0) logDiff += 7; // suh
     return expTable[logDiff];
   }
 
@@ -63,3 +64,4 @@ public class GF8 {
     return String.format("0x%02X", value);
   }
 }
+
