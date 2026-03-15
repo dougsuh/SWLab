@@ -1,0 +1,2 @@
+abc   my file
+password 12345
